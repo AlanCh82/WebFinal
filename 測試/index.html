@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple RPG</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>CS151</h1>
+        <dialog id="mind">
+            <h2>心理測驗：請完成下面故事：<h2>
+                <h3>你身處河岸邊上，想要渡河到對岸。這時河上駛來了一艘船，船上只有漁夫一人。</h3>
+                <div>
+                    <h4 id="question"></h4>
+                    <div id="options"></div>
+                </div>
+                <input id="startButton"type="button"value="開始作答">
+                <button id="close3">close</button>
+        </dialog>
+        <dialog id="dialogDate">
+            <input id="dateselect" type="date"></input>
+            <canvas id="myClock"  width="480"height="100"></canvas>
+            <button id="close2">close</button>
+        </dialog>
+        <dialog id="jokediagram">
+            <p>今日笑話:<br
+                ><pre id="showData"></pre>
+            </p>
+            <button id="jokebutton">查看</button>
+            <button id="close">close</button> 
+        </dialog>
+        <div>
+            <canvas id="myCanvas" width="1090" height="594"></canvas>
+            <p id="talkBox"></p>
+        </div>
+        <div id="player" style="visibility:hidden"></div><!-- YouTube Video Player -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="playList.js"></script>
+        <script src="yt.js"></script>
+        <script src="datepicker.js"></script>
+        <script src="joke.js"></script>
+        <script src="mindQ.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
